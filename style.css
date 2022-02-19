@@ -1,0 +1,15 @@
+svg.bi {
+	position: relative;
+	left: -5px;
+	top: -1px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.footer {
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 95%;   
+    text-align: center;  
+  }
