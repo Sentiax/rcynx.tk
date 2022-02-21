@@ -13,15 +13,54 @@
     <meta property="og:title" content="RCynx"/>
     <meta property="og:url" content="https://www.rcynx.tk"/>
     <meta property="og:description" content="..." />
+    
 </head>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+	    var onloadCallback = function() {
+    grecaptcha.render('html_element', {
+      'sitekey' : '6LfvoI0eAAAAAKcCri4iJV8Ct2ajzxw2nye_Gr-J',
+      'callback' : correctCaptcha
+    });
+  };
+ </script>
+	  
+	  <script>
+		  var correctCaptcha = function(response) {
+    alert(response);
+};
+</script>
+<script>
+  function get_action(form) 
+{
+   var v = grecaptcha.getResponse();
+   if(v.length == 0)
+   {
+       document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+       return false;
+   }
+   else
+   {
+       document.getElementById('captcha').innerHTML="17 Years";
+       return true; 
+   }
+}
+  
+     </script>
 <body>
     <center style="
     margin-top: 150px;
 ">
         <h1>Welcome To RCynx</h1>
         <h3>• My name • <span>Omar</span></h3>
+        <h3>• My bio • <span>im developer , im from kuwait(egypt) </span></h3>
         <h3>• My Os • <span>Linux And Windows</span></h3>
         <h3>• My NFTS • <a href="https://opensea.io/RCynx" style="color: #ffd400;">RCynx</a></h3>
+        <h3>• My Account Old • <a class="old"></a></h3>
+        <h3>• My Account Old • <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LfvoI0eAAAAAKcCri4iJV8Ct2ajzxw2nye_Gr-J"><div style="width: 304px; height: 78px;"><div></div> <button class="btn text-white btn-block btn-primary" onclick="get_action(this)" id="get_action(this)">Check</button></h3>
         <div class="footer"> 
         <a class="btn btn-dark" href="https://github.com/DEVTOOL877" role="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
