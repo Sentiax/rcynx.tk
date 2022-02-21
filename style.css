@@ -13,3 +13,7 @@ svg.bi {
     width: 95%;   
     text-align: center;  
   }
+
+  .old::before {
+    content: "4 Years Ago";
+  }
